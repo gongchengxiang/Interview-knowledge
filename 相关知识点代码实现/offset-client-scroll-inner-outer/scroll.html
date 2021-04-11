@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrap{
+      height: 200px;
+      width: 200px;
+      border: 1px solid red;
+      overflow: auto;
+      padding: 10px;
+    }
+    .item{
+      height: 600px;
+      width: 300px;
+      border: 10px solid red;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="item">
+
+    </div>
+  </div>
+  <script>
+    const item = document.querySelector('.item')
+    const wrap = document.querySelector('.wrap')
+
+    // console.log(wrap.scrollHeight) // 其实就是内容被撑开的高度
+    // console.log(wrap.scrollWidth) // 宽度和高度一样，也是被撑开的宽度
+
+    wrap.onscroll = function(e){
+      const wrapHeight = wrap.clientWidth
+      const currentScrollTop = e.target.scrollTop
+      const scrollHeight = wrap.scrollHeight
+      // console.log('剩余：' + (scrollHeight - currentScrollTop))
+      // console.log('高度：' + wrapHeight)
+      if(scrollHeight - currentScrollTop - wrapHeight < 100){
+        console.log('快到底了')
+      }
+      if(scrollHeight - currentScrollTop === wrapHeight){
+        console.log('到底了')
+      }
+      
+    }
+  </script>
+</body>
+</html>

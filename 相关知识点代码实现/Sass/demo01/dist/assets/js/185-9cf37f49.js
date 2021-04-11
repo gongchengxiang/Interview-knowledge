@@ -1,0 +1,1 @@
+(self.webpackChunksass1=self.webpackChunksass1||[]).push([[185],{185:(s,e,n)=>{"use strict";function t(s){console.log("testChunk: "+s)}n.r(e),n.d(e,{testChunk:()=>t})}}]);

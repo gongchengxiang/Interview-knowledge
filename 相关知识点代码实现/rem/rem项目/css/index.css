@@ -1,0 +1,11 @@
+.card-info{
+  max-width: 768px;
+  margin: 0 auto;
+}
+.card{
+  width: 3.4rem;
+  height: 1.8rem;
+  margin: auto;
+  margin-top: 0.38rem;
+  border-radius: 0.1rem;
+}

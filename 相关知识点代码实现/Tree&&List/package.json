@@ -1,0 +1,7 @@
+{
+  "type":"module",
+  "scripts":{
+    "tree2list":"node tree2list.js",
+    "list2tree":"node list2tree.js"
+  }
+}

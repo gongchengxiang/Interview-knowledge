@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="start()">请求</button>
+  <button onclick="cancel()">取消</button>
+  <script>
+    let cancelAction = null
+
+    function request(){
+      return new Promise((resolve,reject)=>{ 
+        console.log('请求中')
+        cancelAction = function(){
+          reject('取消成功')
+        } 
+        setTimeout(() => { // 假设这个是请求
+          cancelAction = null
+          resolve('请求完成')
+        }, Math.random() * 5000);
+      })
+    }
+
+    
+    function cancel(){
+      if(cancelAction){
+        console.log('执行取消')
+        cancelAction()
+        cancelAction = null
+      }
+    }
+    function start (){
+      if(cancelAction) return
+      console.log('开始请求')
+      request().then(res=>{
+        console.log(res)
+      }).catch(err=>{
+        console.log(err)
+      })
+    }
+  </script>
+</body>
+</html>

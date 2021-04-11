@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <img src="" alt="">
+  <script>
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET','http://localhost:9091/img/1',)
+    // xhr.setRequestHeader('responseType','blob')
+    xhr.onreadystatechange = function(){
+      if(xhr.status == 200 && xhr.readyState == 4){
+        // const blob = new Blob([xhr.response], { type: 'image/png' });
+        // const href = window.URL.createObjectURL(xhr.response);
+        // document.querySelector('img').src = href
+        var a = document.createElement('a')
+        a.target = '_blank'
+        a.download = 'nice.png'
+        a.href = 'http://localhost:9091/img/1'
+        document.body.appendChild(a)
+        a.click()
+      }
+    }
+    xhr.send()
+  </script>
+</body>
+</html>
+
+    <!-- const downloadElement = document.createElement('a');
+    
+    downloadElement.href = href;
+    downloadElement.download = fileName;
+    document.body.appendChild(downloadElement);
+    downloadElement.click();
+    document.body.removeChild(downloadElement); // 下载完成 -->

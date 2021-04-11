@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      border: 1px solid red;
+      width: 600px;
+      height: 600px;
+      display: flex;
+      flex-direction: row; /*定义主轴 row:左右，row-reverse：右左，column：上下，column-reverse：下上*/
+      flex-wrap: wrap; /*定义换行 wrap:换行，nowrap:不换行，wrap-reverse：反着换行*/
+      /* flex-flow: row wrap; 这是flex-direction和flex-wrap的简写 */
+      justify-content: space-between; /*定义主轴上对齐方式，比如主轴是x轴，那么就是从左往右排，从右往左排还是居中排，等等，flex-start:左对齐，flex-end:右对齐，center：居中，space-between:两端对齐，space-around:间隔等分*/
+      align-items: stretch; /*定义交叉轴上到的对齐方式，flex-start：交叉轴起点 | flex-end：交叉轴终点 | center：居中 | baseline：item第一行文字基线 | stretch：item没设高度则高度充满交叉轴;*/
+      align-content: flex-start; /*定义多根轴线的对齐方式，flex-start：交叉轴起点对齐 | flex-end：交叉轴终点对齐 | center：居中 | space-between:交叉轴两端对齐 | space-around：交叉轴间隔相等 | stretch：充满交叉轴;*/
+    }
+    .item{
+      /* width: 100px; */
+      line-height: 40px;
+      border: 1px solid red;
+      /* order: <integer>; 定义item的排列顺序，1，2，3，4*/
+      /* flex-grow: 0; 定义放大比，默认0， 有多余空间会放大*/
+      /* flex-shrink: 1; 定义缩小比，默认1，空间不足会缩小 */
+      flex-basis: 100px; /*定义item占据的主轴空间，*/
+      /* flex:auto; flex-grow, flex-shrink 和 flex-basis的简写，默认值值是:0 1 auto,有两个简写属性auto(1 1 auto)和none(0 0 auto) */
+      /* align-self: auto; 定义单个item的交叉轴对齐方式（align-items的子元素版） auto | flex-start | flex-end | center | baseline | stretch; */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+  </div>
+</body>
+</html>

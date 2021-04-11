@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+</head>
+<body>
+  测试
+  <div id="app"></div>
+  <div id="jq" style="display: none;">
+    jq success!
+  </div>
+  <script src="http://localhost:9091/vue.js"></script>
+  dasdas
+  <script >
+    new Vue({
+      el:'#app',
+      render:(h)=>{
+        return h('span','vue success!')
+      }
+    })
+  </script>
+  <script>
+    console.log('dsdsdsdsdsdsds')
+  </script>
+  <script src="http://localhost:9091/jq.js"></script>
+  <script >
+    $('#jq').show();
+  </script>
+</body>
+</html>

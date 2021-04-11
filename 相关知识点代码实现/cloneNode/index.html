@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #app{
+      background:wheat;
+    }
+    ul{
+      list-style: none;
+    }
+    li{
+      color: rebeccapurple;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h4>测试cloneNode</h4>
+    <ul>
+      <li>1231fds23</li>
+      <li>423sa643s</li>
+      <li>rewq123d5</li>
+      <li>123a3dcv2</li>
+    </ul>
+  </div>
+  <hr>
+  <div id="clone">
+
+  </div>
+  <script>
+    const app = document.querySelector('#app').cloneNode(true)
+    document.querySelector('#clone').appendChild(app)
+  </script>
+</body>
+</html>
+
+<!-- dom.cloneNode(bool)
+bool:true 表示拷贝元素及其子元素
+bool:flase或不传 表示仅拷贝当前dom -->

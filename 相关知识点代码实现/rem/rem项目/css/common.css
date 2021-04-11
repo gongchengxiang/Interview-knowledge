@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+html{
+  font-size: calc(100vw/3.75);
+}
+@media screen and (min-width: 769px){
+  html{
+    font-size: 204.8px;
+  }
+}
+.theme-blue-color{
+  color: #387BE6;
+}
+.theme-blue-bg-color{
+  background-color: #387BE6;
+}
+.header{
+  width: 3.75rem;
+  height: 0.44rem;
+  line-height: 0.44rem;
+  font-size: 0.2rem;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.header .back{
+  position: absolute;
+  left: 0.17rem;
+}
+.header .title{
+  font-size: 0.18rem;
+}

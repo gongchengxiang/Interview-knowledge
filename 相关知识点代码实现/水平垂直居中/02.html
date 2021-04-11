@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>垂直自适应</title>
+    <style>
+    * {
+        margin: 0; padding: 0;
+    }
+    .box {
+        position: relative;
+        width: 400px; 
+        height: 600px;
+        margin: 100px auto;
+        border: 1px solid #666;
+        text-align: center;
+    }
+    .content {
+        width: 100px; 
+        height: 100px;
+        display: inline-block;
+        vertical-align: middle;
+        background: red;
+    }
+    .middle-span {
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span class="middle-span"></span>
+        <div class="content"></div>
+        
+    </div>
+</body>
+</html>

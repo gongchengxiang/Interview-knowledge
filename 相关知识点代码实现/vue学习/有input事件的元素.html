@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" onInput="inputText()" />
+  <textarea cols="30" rows="10" onInput="inputTextarea()" ></textarea>
+  <input type="checkbox" name="Bike" onInput="inputCheckbox()" />
+  <input type="radio" name="Sex" onInput="inputRadio()" />
+  <input type="radio" name="Sex" onInput="inputRadio()" />
+  <select name="cars" onInput="inputSelect()" >
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+</body>
+<script>
+  function inputText(){
+    console.log('inputText')
+  }
+  function inputTextarea(){
+    console.log('inputTextarea')
+  }
+  function inputCheckbox(){
+    console.log('inputCheckbox')
+  }
+  function inputRadio(){
+    console.log('inputRadio')
+  }
+  function inputSelect(){
+    console.log('inputSelect')
+  }
+</script>
+</html>

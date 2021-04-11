@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      box-sizing: content-box;
+    }
+    .wrap{
+      width: 200px;
+      height: 200px;
+      border: 1px solid red;
+    }
+    .item{
+      width: 100px;
+      height: 100px;
+      margin-top: 20px;
+      padding: 20px;
+      margin-left: -20px;
+      border: 10px solid red;
+      /* position: absolute;
+      top: 0; */
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="item"></div>
+  </div>
+  <script>
+    const item = document.querySelector('.item')
+    console.log(item.offsetTop)
+    console.log(item.offsetLeft)
+    // 相对于父元素，元素到左 和 上的距离,是从padding开始算的（发现存在1px误差）
+
+    console.log(item.offsetHeight)
+    console.log(item.offsetWidth)
+    // offsetHeight || offsetWidth = boder + padding + content
+  </script>
+</body>
+</html>

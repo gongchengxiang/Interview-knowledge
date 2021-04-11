@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:focus, a:active {
+    color: green;
+}
+</style>
+</head>
+<body>
+
+<input type="text" id="myAnchor">
+
+<p>点击按钮设置或移除以上链接的焦点。</p>
+
+<input type="button" onclick="getfocus()" value="获取焦点">
+<input type="button" onclick="losefocus()" value="移除焦点">
+
+<script>
+function getfocus() {
+    console.log(1111)
+    document.getElementById("myAnchor").focus();
+}
+
+function losefocus() {
+    document.getElementById("myAnchor").blur();
+}
+</script>
+
+</body>
+</html>

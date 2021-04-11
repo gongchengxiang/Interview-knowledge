@@ -1,0 +1,41 @@
+const root = [0,1,2,3,null,4,5,null,6,7,null,null,8]
+
+const root1 = {
+  val:0,
+  left:{
+    val:1,
+    left:{
+      val:3,
+      left:{
+        val:null
+      },
+      right:{
+        val:6
+      }
+    },
+    right:{
+      val:null
+    }
+  },
+  right:{
+    val:2,
+    left:{
+      val:4,
+      left:{
+        val:7
+      },
+      right:{
+        val:null
+      }
+    },
+    right:{
+      val:5,
+      left:{
+        val:null
+      },
+      right:{
+        val:8
+      }
+    }
+  }
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 400px;
+            height: 200px;
+            background: red;
+            margin: auto;
+            position: relative;
+        }
+        .item{
+            background: green;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .wrap1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+            height: 200px;
+            background: red;
+            margin: auto;
+        }
+        .item1{
+            background: green;
+        }
+
+        .wrap2{
+            width: 400px;
+            height: 200px;
+            background: red;
+            margin: auto;
+            position: relative;
+        }
+        .item2{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+
+        .wrap3{
+            width: 400px;
+            height: 200px;
+            background: red;
+            margin: auto;
+            position: relative;
+        }
+        .item3{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background: green;
+            margin-left: -50px;
+            margin-top: -50px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .wrap4{
+            width: 400px;
+            height: 200px;
+            background: red;
+            margin: auto;
+            display: flex;
+        }
+        .item4{
+            margin: auto;
+            background: green;
+        }
+
+        .wrap4{
+            width: 400px;
+            height: 200px;
+            background: red;
+            margin: auto;
+            display: flex;
+        }
+        .item4{
+            margin: auto;
+            background: green;
+        }
+
+        .wrap5{
+            width: 400px;
+            height: 200px;
+            background: red;
+            margin: auto;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .item5{ 
+            background: green;
+        }
+
+        .wrap6{
+            width: 400px;
+            height: 200px;
+            background: red;
+            margin: auto;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .item6{ 
+            background: green;
+            display: inline-block;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">
+            这种方法不需要知道子元素宽高，也不需要知道父元素宽高
+        </div>
+    </div>
+    <br/>
+    <div class="wrap1">
+        <div class="item1">
+            这种方法不需要关注子元素和父元素的宽高
+        </div>
+    </div>
+    <br/>
+    <div class="wrap2">
+        <div class="item2">
+            这种的特点是需要设置子元素宽高
+        </div>
+    </div>
+    <br/>
+    <div class="wrap3">
+        <div class="item3">
+            这种的特点是需要设置子元素宽高
+        </div>
+    </div>
+    <br/>
+    <div class="wrap4">
+        <div class="item4">
+            这种的特点是代码极少无副作用
+        </div>
+    </div>
+    <br/>
+    <div class="wrap5">
+        <div class="item5">
+            <span>这种的特点是父元素被设为table-cell了，margin 等属性没法用了</span>
+        </div>
+    </div>
+</body>
+</html>

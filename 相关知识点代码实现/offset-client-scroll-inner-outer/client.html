@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      box-sizing: border-box;
+    }
+    .wrap{
+      width: 200px;
+      height: 200px;
+      border: 1px solid red;
+      overflow: auto;
+    }
+    .item{
+      width: 100px;
+      height: 400px;
+      margin-top: 20px;
+      margin-left: -10px;
+      border: 10px solid red;
+      padding: 10px;
+      /* position: absolute;
+      top: 0; */
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="item"></div>
+  </div>
+  <script>
+    const item = document.querySelector('.item')
+    console.log(item.clientHeight)
+    console.log(item.clientWidth)
+
+    // client = padding + content    
+  </script>
+</body>
+</html>

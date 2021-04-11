@@ -1,0 +1,10 @@
+# Browsers that we support 
+ 
+last 1 version
+> 1%
+maintained node versions
+not dead
+ie >= 8
+Firefox >= 3.5
+chrome  >= 35
+opera >= 11.5
