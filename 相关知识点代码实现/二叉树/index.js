@@ -55,3 +55,6 @@ function dfs(root) {
     console.log(arr2)
 }
 dfs(tree.root)
+
+
+
