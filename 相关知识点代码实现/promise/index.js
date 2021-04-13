@@ -97,7 +97,7 @@ class Promise {
                             reject(err)
                         })
                     }
-                } catch (err) {
+                } catch (err) { 
                     reject(err)
                 }
             } else {

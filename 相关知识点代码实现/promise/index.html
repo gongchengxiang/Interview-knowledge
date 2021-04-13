@@ -10,7 +10,12 @@
     <script src="./index.js"></script>
     <script>
         const promise =  new Promise((resolve,reject)=>{
-            resolve(1)
+            setTimeout(()=>{
+                resolve(1)   
+            })
+        }).then(res=>{
+            console.log(res)
+            return undefined
         }).then(res=>{
             console.log(res)
         })

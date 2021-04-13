@@ -1,8 +1,9 @@
+0、调用堆栈
 1、闭包，使用场景
 2、跨域
 3、let const
 4、箭头函数，及其 this
-5、cookie
+5、cookie 手写getCookie(key,value,domain,path)
 6、本地存储
 7、事件机制，捕获、冒泡、委托，target 和 currentTarget
 8、事件循环机制
@@ -24,7 +25,7 @@
 24、meta 标签常用属性
 25、es6 包含什么
 26、this 绑定，默认绑定，隐式绑定，显示绑定，new 绑定
-27、函数柯里化
+27、函数柯里化：只传递给函数一部分参数来调用它，让它返回一个函数去处理剩下的参数。你可以一次性地调用 curry 函数，也可以每次只传一个参数分多次调用。
 28、作用域链
 29、正则（家家必问）
 30、深拷贝，浅拷贝(深拷贝特殊值，循环引用)
@@ -48,15 +49,20 @@
 48、实现 instanceOf 原理
 49、怎么判断一个文件是 html
 50、js 解包拆包
-51、js 类型转换
-52、手写 axios,
+51、js 类型转换，隐式, 显式, 名义和鸭子类型，转换原理，转换规则
+52、手写 axios
 53、匹配 URL 的正则，包括协议、域名、端口、path、hash、querystring
 54、输入 url 到页面渲染完成
 55、html 的 doctype 的作用
 56、JSON.parse stringify
-57、addEventListener
+57、addEventListener 中useCapture 捕获和冒泡 
 58、什么时候会发起 options 请求
 59、堆和栈的区别
 60、JS 如何设置、获取盒模型对应的宽和高 window.getComputedStyle(dom).width dom.getBoundingClientRect().width/height
 61、根据盒模型解释边距重叠问题, 拔高性的延伸
-62、
+62、js引擎
+63、浏览器进程，网络进程，浏览器进程，GPU，渲染进程，插件进程
+64、如何减少回流重绘
+65、js异步的理解，发展历程，优缺点
+66、观察者和发布订阅的区别，各自适应什么场景
+67、
