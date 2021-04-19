@@ -35,7 +35,7 @@
     // console.log(wrap.scrollWidth) // 宽度和高度一样，也是被撑开的宽度
 
     wrap.onscroll = function(e){
-      const wrapHeight = wrap.clientWidth
+      const wrapHeight = wrap.clientHeight
       const currentScrollTop = e.target.scrollTop
       const scrollHeight = wrap.scrollHeight
       // console.log('剩余：' + (scrollHeight - currentScrollTop))

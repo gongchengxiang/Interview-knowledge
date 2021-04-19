@@ -4,4 +4,4 @@ BFC:
 Box:
   css布局的基本单位
 Formating context -> 指页面中的一块渲染区域，并有一套渲染规则，决定了其子元素如何定位，以及和其他元素的关系和相互作用。
-  常见有block formating context（BFC） 和  inline formating context（IFC）。
+  常见有block formating context（BFC） 和  inline formating context（IFC）
